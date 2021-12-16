@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villador | Home</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/js/navbar.js" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <!--Navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <img src="images/logo-villa-dor.jpg">
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="#">Floors</a></li>
+          <li><a href="#">Heating</a></li>
+          <li><a href="#">Woodwork</a></li>
+          <li><a href="#">Ironwork</a></li>
+          <li><a href="#">Ornaments</a></li>
+          <li><a href="#">Miscellaneous</a></li>
+        </ul>
+        <div class="icons">
+        <a href="#"><i class="fa fa-fw fa-search dropbtn" onclick="myFunction()"></i></a>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()"/>
+          </div>
+        <a href="#"><i class="fa fa-fw fa-language dropbtnlang" onclick="myFunctionlang()" ></i></a>
+          <div id="myDropdownlang" class="dropdownlang-content">
+            <a href="#about">Nederlands</a>
+            <a href="#about">Deutsh</a>
+            <a href="#about">Français</a>
+            <a href="#about">Italiano</a>
+            <a href="#about">Русский</a>
+          </div>
+          <a href="#"><i class="fa fa-fw fa-shopping-basket dropbtnlang"></i></a>
+        </div>
+        <div class="dropdown">
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="banner">
+      <img src="images/Versailles-banner.jpg" width="100%" />
+    </div>
+    <div class="about">
+      <div class="content">
+        <fieldset class="fieldset">
+          <legend class="introduction">Introduction</legend>
+        <div class="title">
+          Hello and welcome to the test website of villador, feel free to take a
+          look around!
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo impedit
+          atque consequatur! Iusto distinctio temporibus repellendus labore odit
+          adipisci harum ipsa beatae natus, eum eius, hic aperiam odio! Quasi
+          molestias magnam illo voluptatem iusto ipsam blanditiis, tempore
+          cumque reiciendis quaerat vero tenetur, sequi dolores libero voluptas
+          vitae voluptate placeat dolorum modi ipsa nisi repellat facilis
+          aliquam asperiores. Aut nam repellat harum quas saepe dolorum
+          voluptates ratione, itaque consectetur explicabo a facilis rem
+          mollitia maxime repudiandae fuga reprehenderit, odio cum incidunt
+          labore molestiae quis non perferendis ipsam. Illum, in, deserunt.
+          Ipsa.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit hic
+          excepturi nobis id, eos dolor libero, nam assumenda, at culpa quos
+          perspiciatis ratione ea modi! Natus sapiente a, explicabo sit quisquam
+          eligendi esse provident eos enim doloremque blanditiis aut placeat
+          veniam, libero nostrum quae. Ipsam, iste reprehenderit minima
+          accusantium illo dolorem recusandae, ipsa autem quidem reiciendis a
+          mollitia sit tenetur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint
+          doloremque perspiciatis voluptate ducimus reiciendis rem expedita
+          voluptatibus dicta harum, quo, aspernatur maiores possimus officia
+          quod? Aliquid molestiae illo sequi, tempora perferendis at incidunt
+          nam porro voluptatibus, iste aperiam blanditiis adipisci ducimus
+          repellendus distinctio nostrum ipsum! Voluptas facilis cum, atque
+          tempora magnam beatae sequi! Doloribus expedita, cupiditate quo quod
+          nemo aliquam, mollitia cum ea nam ullam soluta temporibus! Repudiandae
+          incidunt consequatur distinctio deleniti obcaecati sit facilis unde,
+          quisquam veniam ad doloribus!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet veniam
+          error deleniti cum beatae non assumenda illum est dolores, possimus
+          suscipit quibusdam eveniet id fuga dolore unde modi, sapiente
+          voluptas. Mollitia veritatis explicabo cumque enim quia voluptates
+          provident totam perferendis excepturi animi assumenda optio minus
+          laudantium eveniet possimus amet blanditiis dolore in fuga atque,
+          earum officia tempora quam similique est.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ad
+          sunt distinctio quidem incidunt cupiditate sequi deleniti, corrupti
+          officia nam veritatis facilis veniam dolorum enim nisi ipsum dolor
+          rem! Doloribus, eaque odit voluptatem iste laboriosam provident facere
+          quo. Cum repellat pariatur, error ratione repellendus nisi quam culpa
+          tempora facere in atque nesciunt, magni est aliquid unde soluta optio!
+          Dolore pariatur, quaerat quo in cupiditate deleniti exercitationem.
+          Facilis suscipit corporis unde aut minima nihil, eum molestias itaque,
+          tenetur, beatae ipsa at!
+        </p>
+      </fieldset>
+      </div>
+    </div>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      };
+      cancelBtn.onclick = () => {
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      };
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunctionlang() {
+        document.getElementById("myDropdownlang").classList.toggle("showlang");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtnlang')) {
+          var dropdowns = document.getElementsByClassName("dropdownlang-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('showlang')) {
+              openDropdown.classList.remove('showlang');
+            }
+          }
+        }
+      }
+      </script>
+  </body>
+</html>
