@@ -29,7 +29,7 @@
   position: fixed;
   width: 100%;
   z-index: 2;
-  padding: 25px 0;
+  padding: 15px 0;
   transition: all 0.3s ease;
   background-color: black;
 }
@@ -44,11 +44,10 @@
   justify-content: space-between;
 }
 .navbar .logo a {
-  width: 10vh;
-  height: 10vh;
+  padding-top: 10px;
 }
 .navbar img {
-  width: 30vh;
+  width: 33vh;
   height: 10vh;
 }
 .navbar .icons a {
@@ -182,7 +181,7 @@
 .dropbtn {
   background-color: black;
   color: white;
-  font-size: 26px;
+  font-size: 23px;
   border: none;
   cursor: pointer;
 }
@@ -218,8 +217,7 @@
   overflow: auto;
   border: 3px solid black;
   z-index: 1;
-  right: 17%;
-  top: 80%;
+  top: 11vh;
 }
 
 .dropdown-content a {
@@ -242,7 +240,7 @@
 .dropbtnlang {
   background-color: black;
   color: white;
-  font-size: 26px;
+  font-size: 23px;
   border: none;
   cursor: pointer;
 }
@@ -264,6 +262,10 @@
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-family: 'Lato', sans-serif;
+  padding-top: 4vh;
+  background-clip: content-box, padding-box;
+  font-size: 15px;
 }
 
 .dropdownlang-content a {
@@ -281,6 +283,104 @@
 /*dropdown lang end*/
 
 /*footer start*/
+.footer-container {
+  background-color: black;
+  padding: 2rem 0 2rem 0;
+}
+.footer {
+  width: 80%;
+  height: 40vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+}
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+.footer-heading h2 {
+  margin-bottom: 1rem;
+  font-family: 'Lato', sans-serif;
+}
+.footer-heading a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.footer-heading a:hover {
+  color: white;
+  border-bottom: 2px white;
+  text-decoration: underline;
+  transition: .3s ease-out;
+}
+.footer-email-form h2 {
+  margin-bottom: 2rem;
+}
+#footer-email {
+  width: 250px;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+#footer-email::placeholder {
+  color: black;
+}
+#footer-email-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #337AF1;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+#footer-email-btn:hover {
+  cursor: pointer;
+  background-color: #337AF1;
+  transition: all .4s ease-out;
+}
+.footer-bottom {
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+}
+@media screen and (max-width: 1150) {
+  .footer {
+    height: 50vh;
+  }
+  .footer-email-form {
+    margin-top: 4rem;
+  }
+}
+@media screen and (max-width: 820) {
+  .footer {
+    height: 2rem;
+  }
+}
+@media screen and (max-width: 720) {
+  .footer-3 {
+    display: none;
+  }
+  .footer-email-form {
+    margin-top: 2rem;
+  }
+}
+.fieldsetFeed {
+  width: 98%;
+  padding: 20px;
+}
 /*footer end*/
 .introduction {
   font-size: 30px;
