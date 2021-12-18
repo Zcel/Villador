@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villador | Home</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/js/navbar.js" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <!--Navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="content">
+        <a class="logo" href="/">
+          <img src="images/logo-villa-dor.jpg">
+        </a>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="#">Floors</a></li>
+          <li><a href="#">Heating</a></li>
+          <li><a href="#">Woodwork</a></li>
+          <li><a href="#">Ironwork</a></li>
+          <li><a href="#">Ornaments</a></li>
+          <li><a href="#">Miscellaneous</a></li>
+        </ul>
+        <div class="icons">
+        <a href="#"><i class="fa fa-fw fa-search dropbtn" onclick="myFunction()"></i></a>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()"/>
+          </div>
+        <a href="#"><i class="fas fa-globe dropbtnlang" onclick="myFunctionlang()" ></i></a>
+          <div id="myDropdownlang" class="dropdownlang-content">
+            <a href="#about">Nederlands</a>
+            <a href="#about">Deutsh</a>
+            <a href="#about">Français</a>
+            <a href="#about">Italiano</a>
+            <a href="#about">Русский</a>
+          </div>
+          <a href="#"><i class="fas fa-shopping-cart dropbtnlang"></i></a>
+        </div>
+        <div class="dropdown">
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="banner">
+      <img src="images/Versailles-banner.jpg" width="100%" />
+    </div>
+    <div class="about">
+      <div class="content">
+        <div class="title">
+            Terms and conditions
+        </div>
+        <fieldset class="fieldset">
+            <legend class="introduction">Article 1 - Applicability</legend>
+        <p>
+            1.1 These general terms and conditions apply to every quotation 
+            and every (follow-up) agreement between Villa d'Or and a counterparty, 
+            insofar as these conditions have not been explicitly deviated from by the former.
+        </p>
+        <p>
+            1.2 If the other party wishes to deviate from the general terms and 
+            conditions of Villa d'Or, the other party must submit a proposal to that 
+            effect explicitly and in writing to Villa d'Or. Villa d'Or can only accept 
+            such a change proposal explicitly and in writing from the other party.
+        </p>
+        <p>
+            1.3 Verbal promises and agreements with subordinates of Villa d'Or do not 
+            bind the latter until and insofar as they have been confirmed in writing by it.
+        </p>
+    </fieldset>
+    <br>
+        <fieldset class="fieldset">
+            <legend class="introduction">Article 2 - Offers and orders</legend>
+        <p>
+            2.1 The quotes, offers, stock lists and price lists made by Villa d'Or are entirely without obligation and therefore not binding on it, unless explicitly stated otherwise in writing. In the event of non-acceptance, express offers or quotations will lapse within 1 month of the date, unless explicitly stated otherwise in writing.
+        </p>
+        <p>
+            2.2 Images and descriptions in offers, quotations, websites, prospects, catalogs, drawings, designs, order confirmations, calculations, measurements and weights, color statements as well as data provided by Villa d'Or do not bind the latter and are only for guidance.
+        </p>
+        <p>
+            2.3 When the sample is delivered, the sample only applies for determining the average quality and average color. Taking into account that historical or antique building materials such as wood, marble, iron, sandstone, (tiles and tiles), etc. are used, the other party is obliged to accept the normal structure and color of the ordered materials. Deviations in color, structure, cracks or damage specific to the sold and delivered historical materials, and repair work performed or repairs performed can therefore not be a reason for cancellation or dissolution of the agreement or rejection of the delivered goods. Also minor deviations from specified models, weights and other deviations, as a result of which no substantial changes are made to the technical and / or aesthetic implementation of the goods, do not give the other party the right to cancel or to dissolve the agreement or the right to refuse the receipt or payment of the goods. A reasonable tolerance is included for sizes.
+        </p>
+        <p>
+            2.4 In compound quotes there is no obligation to deliver a part at a corresponding part of the price quoted for the whole.
+        </p>
+        <p>
+            2.5 Villa d'Or reserves, if and insofar as applicable, the intellectual property for the designs, images, drawings, samples, samples and models provided with the quotation. They must be returned immediately at Villa d'Or's first request, without prejudice to other legal measures at Villa d'Or's disposal to safeguard its rights. Unless expressly agreed otherwise, Villa d'Or reserves all its copyright. The designs, images, drawings and sketches provided with the quotation may not be copied or used in any other way, unless Villa d'Or has given written permission for this.
+        </p>
+        <p>
+            2.6 The agreement between Villa d'Or and the other party is first established because and at the moment that Villa d'Or confirms the order in writing or commences implementation thereof.
+        </p>
+        <p>
+            2.7 If the assignment to Villa d'Or (partly) consists of the interpretation of data provided by the other party, Villa d'Or does not accept any liability with regard to disputes arising from this interpretation.
+        </p>
+    </fieldset>
+    <br>
+    <fieldset class="fieldset">
+        <legend class="introduction">Article 3 - Changes to the order</legend>
+    <p>
+        3.1 Changes to the original order of whatever nature (including color, length, model, type of material or confirmation) made in writing or orally by or on behalf of the other party, which cause higher costs than those for which the price estimate could be calculated, the other party will be charged additionally.    </p>
+    <p>
+        3.2 Any changes in the execution of the assignment that are still required by the other party, after the assignment has been issued, must be notified to Villa d'Or in time and in writing by the other party. If they are given orally or by telephone, the risk of implementation of the changes is for the account of the other party.    </p>
+    <p>
+        3.3 Changes made to the order already issued may result in a delivery time agreed before the change being exceeded by Villa d'Or - outside its responsibility.    </p>
+    <p>
+        3.4 The lack of a written assignment does not affect the claims of Villa d'Or on settlement of additional work.
+    </p>
+</fieldset>
+<br>
+        <fieldset class="fieldset">
+            <legend class="introduction">Article 4 - Prices</legend>
+        <p>
+            4.1 All prices, unless explicitly agreed otherwise or stated, apply "ex" Villa d'Or, without packaging (packaging), shipping costs and excl. VAT.
+        </p>
+        <p>
+            4.2 If after the date of the offer or after the conclusion of an agreement there is any change in the costs on which this price level is based, Villa d'Or is entitled to change the offer price or the agreed price accordingly. Changes in costs also include changes in social and tax charges and wages, fluctuations in currencies, changes in selling prices of suppliers of Villa d'Or or a change in import duties, levies, freight, insurance and similar costs, wherever levied or made irrespective of whether or not the delivery is made free of charge. However, if the price increase is more than 10%, the other party has the right to terminate the agreement.
+        </p>
+    </fieldset>
+    <br>
+        <fieldset class="fieldset">
+            <legend class="introduction">Article 5 - Delivery time and (partial) deliveries</legend>
+        <p>
+            5.1 An agreed delivery time is not a strict deadline, unless the contrary may have been explicitly agreed in writing. In the event of late delivery, the other party must therefore give Villa d'Or written notice of default, whereby Villa d'Or must still be granted a reasonable period of time to deliver. Exceeding the specified delivery times will therefore not lead to any compensation obligation from Villa d'Or and does not give the other party the right to terminate the agreement.
+        </p>
+        <p>
+            5.2 The delivery time is always extended by the time that the other party is late in complying with any obligation already arising from the agreement.
+        </p>
+        <p>
+            5.3 If Villa d'Or and the other party have agreed delivery on demand from Villa d'Or and Villa d'Or has notified the other party in writing that the goods are ready for delivery, the other party must within two weeks after the date of this notice Villa d'Or in the absence of which Villa d'Or is entitled to charge the contractual interest on the invoice amount to the other party but also to charge a fee for storage costs to the other party, all this until the other party referred to business of Villa d'Or.
+        </p>
+        <p>
+            5.4 In the event that Villa d'Or and the other party have agreed that Villa d'Or will deliver on call from the other party, an explicit call period will always be provided, namely the period between the call by the other party and the actual delivery by Villa d'Or, be agreed. As long as this last notification will not have reached Villa d'Or, it does not have to deliver. Villa d'Or has the right to take the agreed call period into account when calling the other party.
+        </p>
+        <p>
+            5.5 If Villa d'Or has undertaken to deliver carriage paid to the other party, it is free to choose the transport. If Villa d'Or is responsible for the care of the transport, immediately after leaving the warehouse, the goods are for the account and risk of the other party (including the transport risk, war risk and all other risks).
+        </p>
+        <p>
+            5.6 If the other party does not accept the goods for any reason or fails to provide information or instructions necessary for the delivery, Villa d'Or has the right to store the goods at the other party's expense and risk and / or or to fuse. The storage costs will amount to 1% per month of the sales value of the stored items, with a minimum of € 115, unless Villa d'Or can prove that its costs are higher. The goods are deemed to have been delivered at the moment that the other party actually took possession of them, Villa d'Or has, in accordance with the provisions of paragraph 3, kept them ready two weeks before the other party or these goods are delivered to the other party for free delivery. has offered at the address indicated by the other party.
+        </p>
+        <p>
+            5.7 Villa d'Or is permitted to deliver sold goods in parts. This does not apply if a partial delivery has no independent value. If the goods are delivered in parts, Villa d'Or is authorized to invoice each partial delivery.
+        </p>
+    </fieldset>
+    <br>
+        <fieldset class="fieldset">
+            <legend class="introduction">Article 6 - Cancellation</legend>
+        <p>
+            6.1 The other party is not entitled to unilaterally cancel the agreement concluded with Villa d'Or in whole or in part, other than with the explicit permission of Villa d'Or.
+        </p>
+        <p>
+            6.2 If the agreement concluded with the permission of Villa d'Or is wholly or partially canceled, the other party is, however, obliged to reimburse Villa d'Or for all costs reasonably incurred in view of the implementation of the agreement, all without prejudice to the right of Villa d 'Or for compensation for loss of profit, as well as other damage resulting from the cancellation. These costs amount to at least 30% of the agreed price with a minimum of 150 Euros.
+        </p>
+    </fieldset>
+    <br>
+        <fieldset class="fieldset">
+            <legend class="introduction">Article 7 - Termination of the agreement</legend>
+        <p>
+            7.1 The claims of Villa d'Or on the other party are immediately due and payable in the following cases:
+            - Circumstances that have come to the knowledge of Villa d'Or after the conclusion of the agreement give the latter good reason to fear that the other party will not fulfill its obligations.
+            - If Villa d'Or has asked the other party at the conclusion of the agreement to provide security (eg bank guarantee) for compliance and this security is not provided or is insufficient. In the aforementioned cases, Villa d'Or is authorized to suspend further performance of the agreement or to dissolve the agreement, without prejudice to Villa d'Or's right to claim damages.        </p>
+        <p>
+            7.2 If circumstances arise with regard to persons or material which Villa d'Or uses or is likely to use in the performance of the agreement, which are of such a nature that the implementation of the agreement becomes impossible or so objectionable and / or disproportionately expensive, that compliance with the agreement cannot reasonably be demanded, Villa d'Or is authorized to dissolve the agreement.
+        </p>
+    </fieldset>
+    <br>
+        <fieldset class="fieldset">
+            <legend class="introduction">Article 8 - Risk and ownership conditions</legend>
+        <p>
+            8.1 As soon as an item is considered delivered within the meaning of Article 5 of these general terms and conditions of sale and delivery, the risk is transferred to the other party.
+        </p>
+        <p>
+            8.2 All goods delivered by Villa d'Or remain the property of Villa d'Or, until the moment of full payment to Villa d'Or of all goods delivered or to be delivered by Villa d'Or to the other party or pursuant to such an agreement also work performed or to be performed for the other party, as well as the claim for failure to comply with such agreements.
+        </p>
+        <p>
+            8.3 As long as the other party has not paid the above claims, the other party is not entitled to establish a mortgage right, a right of pledge or a non-possessory right of pledge on the goods delivered by Villa d'Or and commits itself to third parties who wish to establish such a right on first demand. of Villa d'Or that he is not authorized to establish a mortgage or lien.
+        </p>
+        <p>
+            8.4 In the event that the other party fails to fulfill any obligation towards Villa d'Or from the agreement with regard to goods sold (or work to be performed), the latter is entitled to the goods, both the originally delivered and the newly formed items, without any judicial intervention, summons or notice of default. to take back. The other party authorizes Villa d'Or to enter the place where these items are located. The other party must cooperate in this regard on pain of forfeiting a fine of 400 Euros per day that it fails to do so. By taking back Villa d'Or, the agreement will not be dissolved, unless Villa d'Or has informed the other party.
+        </p>
+        <p>
+            8.5 The other party undertakes at Villa d'Or's first request:
+            - To have the goods delivered subject to retention of title insured and to keep them insured against, fire, explosion and water damage as well as against theft and to give the policy of this insurance to Villa d'Or for inspection.
+            - To pledge to Villa d'Or all claims of the other party against insurers with regard to the goods delivered under retention of title in the manner prescribed in art. 3: 239 of the Dutch Civil Code.
+            - to cooperate in all ways with the reasonable measures that Villa d'Or wants to take to protect its property rights with regard to the goods and which do not unreasonably hinder the other party. 8.6 Villa d'Or provides the other party the moment that the other party has fulfilled all its payment obligations from these and similar agreements the ownership of the delivered goods subject to the pledge of Villa d'Or, for other claims that Villa d'Or on the other party. At the first request of Villa d'Or, the other party will lend its cooperation to actions that are required in that context.        </p>
+    </fieldset>
+    <br>
+        <fieldset class="fieldset">
+            <legend class="introduction">Article 9 - Payment</legend>
+        <p>
+            9.1 Each purchase agreement is made under the general condition: deposit on order and payment of the balance by bank transfer before departure warehouse (in case of delivery by carrier) or in cash or by check on delivery to the driver of Villa d'Or.
+        </p>
+        <p>
+            9.2 If, contrary to paragraph 1, it has been agreed between Villa d'Or and the other party that an invoice will be sent after delivery, the payment term is 14 days after the invoice date, unless otherwise agreed. After the expiry of 14 days after the invoice date, the other party is automatically in default, therefore without further notice of default. From the moment of default, the other party owes an interest of 2% per month or a part thereof on the due amount from the due date.
+        </p>
+        <p>
+            9.3 In the event of liquidation, bankruptcy or suspension of payment from the other party, the obligations of the other party will be immediately due and payable.
+        </p>
+        <p>
+            9.4 Payments made by the other party serve first and foremost to settle all interest and costs owed, and secondly for the invoices that have been outstanding the longest, even if the other party states that the payment relates to a later invoice.
+        </p>
+        <p>
+            9.5 Complaints, claims or objections from the other party against the amount of the invoice do not give the latter the right to suspend payments, or to compensate counterclaims with payments due to Villa d'Or.
+        </p>
+        <p>
+            9.6 Villa d'Or always reserves the right (also in case the purchase is concluded on other conditions) to send the goods COD or claim payment in advance.
+        </p>
+        <p>
+            9.7 If the other party is in default or in default with the fulfillment of one or more of its obligations, then all reasonable costs for obtaining satisfaction out of court will be borne by the other party. In any case, the other party owes Villa d'Or by way of extrajudicial collection costs:
+            - On the first 3,000 euros 15%
+            - Beyond up to 6,000 euros 10%
+            - Beyond up to 15,000 euros 8%
+            - Beyond up to 60,000 Euro 5%
+            - Beyond 60.000 Euro 3%        </p>
+        <p>
+            9.8 If Villa d'Or demonstrates that it has incurred higher costs, which were reasonably necessary, these will also qualify for reimbursement.
+        </p>
+        <p>
+            9.9 The other party shall owe to Villa d'Or, in addition to the possible immediate collection and liquidated legal costs determined by a court decision, also the legal costs incurred by the latter, further incurred, in all instances, unless the other party demonstrates that these are unreasonably high . This only applies if the parties conduct legal proceedings with regard to an agreement to which these general terms and conditions apply and a legal decision becomes final and final in which the other party is wholly or largely unsuccessful.
+        </p>
+    </fieldset>
+    <br>
+        <fieldset class="fieldset">
+            <legend class="introduction">Article 10 - Warranty</legend>
+        <p>
+            10.1 Guarantees for the compliance of historical building materials with special requirements are only binding if they have been confirmed in writing by Villa d'Or to the other party. The guarantee does not apply if the damage is the result of incorrect handling of the sold and delivered building materials.
+        </p>
+        <p>
+            10.2 Villa d'Or is not responsible for defects that have arisen as a result of the operation of natural products that have been incorporated into the delivered products. In addition, Villa d'Or gives no guarantee on discolouration of natural products and defects and / or damage caused by, for example, woodworm and / or other parasites.
+        </p>
+    </fieldset>
+    <br>
+        <fieldset class="fieldset">
+            <legend class="introduction">Article 11 - Complaints</legend>
+        <p>
+            11.1 The counterparty is responsible for checking the number of items delivered. If a complaint is made about the delivered items / number immediately after receipt, the quantities stated on the waybills, delivery notes and / or similar documents are acknowledged as being correct. In order to be valid, complaints about possible defects or damage must be noted on the receipt by the other party.
+        </p>
+        <p>
+            11.2 Complaints about defects not visible on delivery can only be made valid by the other party at Villa d'Or by submitting them within 14 days after receipt of the goods. If submission within this period is not reasonably possible, the period of 14 days from the time the defect was discovered or could have been established applies. The complaint must include a clear description of the complaints and defects found.
+        </p>
+        <p>
+            11.3 All or part of the right to claim will lapse due to the total or partial processing of building materials.
+        </p>
+        <p>
+            11.4 If the complaint is justified, Villa d'Or will, at its option, pay compensation that is at most equal to the amount of the invoice value or equal to the invoice value of the part to be replaced of the delivered goods, excluding VAT, or the replace part of the delivered item free of charge or replace the total delivered item up to the amount equal to the invoice value, excluding VAT. Villa d'Or is not obliged to pay further compensation. Indirect damage, including inter alia consequential damage, loss of profit, lost savings and damage due to business interruption, will never be compensated. Commercial damage will never be compensated by Villa d'Or.
+        </p>
+        <p>
+            11.5 The other party never has the right to return the goods, unless Villa d'Or has agreed to this in writing. If a return shipment takes place, with which Villa d'Or has not agreed in writing and the latter nevertheless proceeds to take delivery, this will always be at the expense and risk of the other party. The shipment is then held by Villa d'Or at the expense and risk of the other party at the disposal of the latter, without any recognition of the correctness of any complaints can and may be derived from this.
+        </p>
+    </fieldset>
+    <br>
+        <fieldset class="fieldset">
+            <legend class="introduction">Article 12 - Force majeure</legend>
+        <p>
+            12.1 Force majeure is understood to mean circumstances that prevent fulfillment of the commitment and that cannot be attributed to Villa d'Or. This will also include (if and in so far as these circumstances make fulfillment impossible or unreasonably complicate):
+            - Strikes in other companies and / or suppliers of Villa d'Or on which Villa d'Or depends;
+            - Wildcats or political strikes at the Villa d'Or company or other companies and / or suppliers on which Villa d'Or depends;
+            - A general lack of required historical building materials and other items or services required to achieve the agreed performance; - Unforeseeable stagnations at suppliers or other third parties on which Villa d'Or depends;
+            - General transport problems, ice, fire, government measures, war, danger of war, martial law, mobilization, hostilities, transport restrictions, import and export restrictions.        </p>
+        <p>
+            12.2 Villa d'Or also has the right to invoke force majeure if the circumstance that prevents (further) fulfillment occurs after Villa d'Or should have fulfilled its obligations.
+        </p>
+        <p>
+            12.3 During the period of force majeure, the delivery and other obligations of Villa d'Or are suspended. If the period in which fulfillment of the obligations by Villa d'Or is not possible due to force majeure, lasts longer than all circumstances taking into account is reasonable, both parties are entitled to terminate the agreement, without there being any obligation to pay compensation.
+        </p>
+        <p>
+            12.4 If at the commencement of the force majeure Villa d'Or has already partially fulfilled its obligations or can only partially meet its obligations, it is entitled to separately invoice the already delivered or the deliverable part and the other party is obliged to pay this invoice as if it concerned a separate contract. However, this does not apply if the already delivered or deliverable part has no independent value whatsoever.
+        </p>
+    </fieldset>
+    <br>
+        <fieldset class="fieldset">
+            <legend class="introduction">Article 13 - Liability</legend>
+        <p>
+            13.1 Irrespective of any further liability on the part of Villa d'Or, which liability will always be limited to the amount of the purchase price and / or price, Villa d'Or is not liable if the other party or third parties use the materials supplied by it incorrectly, ie not using the materials explicitly prescribed by Villa d'Or.
+        </p>
+        <p>
+            13.2 Villa d'Or is never obliged to pay any compensation other than those explicitly laid down in these terms and conditions, in particular not to compensate other direct or indirect damage, loss of profit, damage to third parties, etc.
+        </p>
+    </fieldset>
+    <br>
+        <fieldset class="fieldset">
+            <legend class="introduction">Article 14 - Applicable law and competent court</legend>
+        <p>
+            14.1 All disputes arising from offers and agreements will be subject to the judgment of the District Court in Arnhem, unless the legal rules regarding jurisdiction of the civil court dictate otherwise. Villa d'Or, however, remains authorized at all times to sue the other party before the civil court competent according to the Law or the applicable international treaty.
+        </p>
+        <p>
+            14.2 All agreements between Villa d'Or and the other party are governed by Dutch law.
+        </p>
+    </fieldset>
+      </div>
+    </div>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      };
+      cancelBtn.onclick = () => {
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      };
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunctionlang() {
+        document.getElementById("myDropdownlang").classList.toggle("showlang");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtnlang')) {
+          var dropdowns = document.getElementsByClassName("dropdownlang-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('showlang')) {
+              openDropdown.classList.remove('showlang');
+            }
+          }
+        }
+      }
+      </script>
+                <div class="footer-container">
+      <div class="footer">
+        <div class="footer-heading footer-1">
+          <h3>Styles</h3>
+          <a href="#">Art Nouveau</a>
+          <a href="#">Art Deco</a>
+          <a href="#">Vintage</a>
+          <a href="#">Directoire</a>
+          <a href="#">Industriel</a>
+          <a href="#">Empire</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h3>Periods</h3>
+          <a href="/">17th century</a>
+          <a href="/">18th century</a>
+          <a href="/">19th century</a>
+          <a href="/">1900-1930</a>
+          <a href="/">1930-1950</a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h3>Social Media</h3>
+          <a href="/">Example</a>
+          <a href="/">Example</a>
+          <a href="/">Example</a>
+                </div>
+        <div class="footer-email-form">
+          <h3>Newsletter</h3>
+          <input type="email" placeholder="Enter your email address" id="footer-email">
+          <input type="submit" value="Sign Up" id="footer-email-btn">
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Villa d'Or B.V. | Since 1995 | All rights reserved | Terms and conditions | <a class="cgv" href="/terms-and-conditons.html">CGV</a></p>
+      </div>
+    </div>
+  </body>
+</html>
