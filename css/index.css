@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Spline+Sans&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -319,8 +320,8 @@
   text-decoration: underline;
   transition: .3s ease-out;
 }
-.footer-email-form h2 {
-  margin-bottom: 2rem;
+.footer-email-form h3 {
+  margin-bottom: 1rem;
 }
 #footer-email {
   width: 250px;
@@ -363,7 +364,7 @@
     height: 50vh;
   }
   .footer-email-form {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
   .footer-bottom {
     text-align: center;
@@ -471,18 +472,12 @@
   width: 98%;
   padding: 10px;
 }
-.instafeed {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 10vh;
-  width: 100%;
-  padding: 0%;
-  padding-bottom: 5vh;
-  padding-top: 5vh;
-}
-.cgv {
+.tac {
   color: white;
   text-decoration: none;
+}
+.tac:hover {
+  text-decoration: underline;
 }
 /*footer end*/
 .introduction {
@@ -492,4 +487,77 @@
   width: 100%;
   padding: 20px;
   padding-top: 0px;
+}
+/*shopping start*/
+.products {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3vh;
+  margin-top: 1vh;
+}
+.card{
+  position: relative;
+  margin-top: 10px;
+}
+.top-section{
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  background-color: white;
+  align-items: center;
+  text-align: center;
+}
+#image-container{
+  width: 270px;
+  height: 270px;
+}
+#image-container:hover{
+  transform: scale(1.1);
+  transition: .2s ease-in;
+}
+.product-info{
+  color: black;
+  font-family: 'Lato', sans-serif;
+  padding: 20px;
+  padding-top: 10px;
+}
+.name{
+  font-size: 23px;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.dis{
+  font-size: 16px;
+  opacity: 0.7;
+  text-align: left;
+  padding-left: 3%;
+}
+.btn{
+  display: block;
+  background: #9b8f78;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  margin-top: 10px;
+  transition: 0.3s;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  border-radius: 7px;
+}
+.btn:hover{
+  background: #333;
+  transition: .4s;
+  color: white;
+}
+.arrivals {
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  padding: 3vh;
+  font-family: 'Lato', sans-serif;
+font-family: 'Spline Sans', sans-serif;
 }
