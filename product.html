@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villador | Home</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/product.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/js/navbar.js" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <!--Navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+    <script>
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="content">
+        <a class="logo" href="/">
+          <img src="images/logo-villa-dor.jpg">
+        </a>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="#">Floors</a></li>
+          <li><a href="#">Heating</a></li>
+          <li><a href="#">Woodwork</a></li>
+          <li><a href="#">Ironwork</a></li>
+          <li><a href="#">Ornaments</a></li>
+          <li><a href="#">Miscellaneous</a></li>
+        </ul>
+        <div class="icons">
+        <a href="#"><i class="fa fa-fw fa-search dropbtn" onclick="myFunction()"></i></a>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()"/>
+          </div>
+        <a href="#"><i class="fas fa-globe dropbtnlang" onclick="myFunctionlang()" ></i></a>
+          <div id="myDropdownlang" class="dropdownlang-content">
+            <a href="#about">Nederlands</a>
+            <a href="#about">Deutsh</a>
+            <a href="#about">Français</a>
+            <a href="#about">Italiano</a>
+            <a href="#about">Русский</a>
+          </div>
+          <a href="#"><i class="fas fa-shopping-cart dropbtnlang"></i></a>
+        </div>
+        <div class="dropdown">
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="banner">
+      <img src="images/Versailles-banner.jpg" width="100%" />
+    </div>
+    <br>
+    <div class = "card-wrapper">
+      <div class = "card">
+        <!-- card left -->
+        <div class = "product-imgs">
+          <div class = "img-display">
+            <div class = "img-showcase">
+              <img src = "images/stool.jpg" alt = "">
+              <img src = "images/Pierre bleue.jpg" alt = "">
+              <img src = "images/Chenets.jpg" alt = "">
+              <img src = "images/bercea.jpg" alt = "">
+            </div>
+          </div>
+          <div class = "img-select">
+            <div class = "img-item">
+              <a href = "#" data-id = "1">
+                <img src = "images/stool.jpg" alt = "" id="img-scale-bottom">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "2">
+                <img src = "images/Pierre bleue.jpg" alt = "" id="img-scale-bottom">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "3">
+                <img src = "images/Chenets.jpg" alt = "" id="img-scale-bottom">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a href = "#" data-id = "4">
+                <img src = "images/bercea.jpg" alt = "" id="img-scale-bottom">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card right -->
+        <div class = "product-content">
+          <h2 class = "product-link">Antique Chairs</h2>
+
+          <div class = "product-detail">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+            <ul>
+              <li>Item ID: <span>357GK</span></li>
+              <li>Quantity: <span>2</span></li>
+              <li>Origin: <span>Spain</span></li>
+              <li>Period: <span>19th century</span></li>
+              <li>Material(s): <span>Reinforced Plastic</span></li>
+            </ul>
+          </div>
+
+          <div class = "purchase-info">
+            <input type = "number" min = "0" value = "1" max="2">
+            <button type = "button" class = "btn">
+              Add to Cart <i class = "fas fa-shopping-cart"></i>
+            </button>
+          </div>
+
+          <div class = "social-links">
+            <p>Share At: </p>
+            <a href = "#">
+              <i class = "fab fa-facebook-f"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-twitter"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-instagram"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-whatsapp"></i>
+            </a>
+            <a href = "#">
+              <i class = "fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      };
+      cancelBtn.onclick = () => {
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      };
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunctionlang() {
+        document.getElementById("myDropdownlang").classList.toggle("showlang");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtnlang')) {
+          var dropdowns = document.getElementsByClassName("dropdownlang-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('showlang')) {
+              openDropdown.classList.remove('showlang');
+            }
+          }
+        }
+      }
+      </script>
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+          
+                <div class="footer-container">
+      <div class="footer">
+        <div class="footer-heading footer-1">
+          <h3>Styles</h3>
+          <a href="#">Art Nouveau</a>
+          <a href="#">Art Deco</a>
+          <a href="#">Vintage</a>
+          <a href="#">Directoire</a>
+          <a href="#">Industriel</a>
+          <a href="#">Empire</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h3>Periods</h3>
+          <a href="/">17th century</a>
+          <a href="/">18th century</a>
+          <a href="/">19th century</a>
+          <a href="/">1900-1930</a>
+          <a href="/">1930-1950</a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h3>Materials</h3>
+          <a href="/">Stone</a>
+          <a href="/">Terracotta</a>
+          <a href="/">Steel</a>
+          <a href="/">Wood</a>
+          <a href="/">Cement</a>
+                </div>
+        <div class="footer-email-form">
+          <h3>Newsletter</h3>
+          <input type="email" placeholder="Enter your email address" id="footer-email">
+          <input type="submit" value="Sign Up" id="footer-email-btn">
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Villa d'Or B.V. | Since 1995 | All rights reserved | <a class="tac" href="/terms-and-conditons.html">Terms and conditions</a> |</p>
+      </div>
+    </div>
+  </body>
+</html>
