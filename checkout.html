@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villador | Home</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/checkout.css" />
+    <script src="js/lang.js"></script>
+    <script src="js/searchbar.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <!--Navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!--Card-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="content">
+        <a class="logo" href="/">
+          <img src="images/logo-villa-dor.jpg">
+        </a>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="#" >Floors</a></li>
+          <li><a href="#">Heating</a></li>
+          <li><a href="#">Woodwork</a></li>
+          <li><a href="#">Ironwork</a></li>
+          <li><a href="#">Ornaments</a></li>
+          <li><a href="#">Miscellaneous</a></li>
+        </ul>
+        <div class="icons">
+        <a href="#"><i class="fa fa-fw fa-search dropbtn" onclick="myFunction()"></i></a>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()"/>
+          </div>
+        <a href="#"><i class="fas fa-globe dropbtnlang" onclick="myFunctionlang()" ></i></a>
+          <div id="myDropdownlang" class="dropdownlang-content">
+            <a href="#about" style="font-size: 20px;">Nederlands</a>
+            <a href="#about" style="font-size: 20px;">Deutsch</a>
+            <a href="#about" style="font-size: 20px;">Français</a>
+            <a href="#about" style="font-size: 20px;">Italiano</a>
+            <a href="#about" style="font-size: 20px;">Русский</a>
+          </div>
+          <a href="cart.html"><i class="fas fa-shopping-cart dropbtnlang"></i></a>
+        </div>
+        <div class="dropdown">
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner">
+      <img src="images/Versailles-banner.jpg" width="100%" />
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="/action_page.php">
+            
+              <div class="row">
+                <div class="col-50">
+                  <h3>Billing Address</h3>
+                  <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                  <input type="checkouttext" id="fname" name="firstname" placeholder="John M. Doe">
+                  <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                  <input type="checkouttext" id="email" name="email" placeholder="john@example.com">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                  <input type="checkouttext" id="adr" name="address" placeholder="542 W. 15th Street">
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="checkouttext" id="city" name="city" placeholder="New York">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="checkouttext" id="state" name="state" placeholder="NY">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input type="checkouttext" id="zip" name="zip" placeholder="10001">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Cards</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Name on Card</label>
+                  <input type="checkouttext" id="cname" name="cardname" placeholder="John More Doe">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="checkouttext" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="checkouttext" id="expmonth" name="expmonth" placeholder="September">
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Exp Year</label>
+                      <input type="checkouttext" id="expyear" name="expyear" placeholder="2018">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="checkouttext" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+              <input type="submit" value="Continue to checkout" class="btn">
+            </form>
+          </div>
+        </div>
+        <div class="col-25">
+          <div class="container">
+            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+            <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+            <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+            <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+            <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+          </div>
+        </div>
+      </div>
+  <br><br>
+
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      };
+      cancelBtn.onclick = () => {
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      };
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+                <div class="footer-container">
+      <div class="footer">
+        <div class="footer-heading footer-1">
+          <h3>Styles</h3>
+          <a href="#">Art Nouveau</a>
+          <a href="#">Art Deco</a>
+          <a href="#">Vintage</a>
+          <a href="#">Directoire</a>
+          <a href="#">Industriel</a>
+          <a href="#">Empire</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h3>Periods</h3>
+          <a href="/">17th century</a>
+          <a href="/">18th century</a>
+          <a href="/">19th century</a>
+          <a href="/">1900-1930</a>
+          <a href="/">1930-1950</a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h3>Materials</h3>
+          <a href="/">Stone</a>
+          <a href="/">Terracotta</a>
+          <a href="/">Steel</a>
+          <a href="/">Wood</a>
+          <a href="/">Cement</a>
+                </div>
+        <div class="footer-email-form">
+          <h3>Newsletter</h3>
+          <input type="email" placeholder="Enter your email address" id="footer-email">
+          <input type="submit" value="Sign Up" id="footer-email-btn">
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Villa d'Or | Since 1995 | All rights reserved | <a class="tac" href="/terms-and-conditons.html">Terms and conditions</a></p>
+      </div>
+    </div>
+  </body>
+</html>

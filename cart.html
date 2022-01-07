@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villador | Home</title>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <script src="js/lang.js"></script>
+    <script src="js/searchbar.js"></script>
+    <script src="js/cart.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <!--Navbar-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="content">
+        <a class="logo" href="/">
+          <img src="images/logo-villa-dor.jpg">
+        </a>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="#">Floors</a></li>
+          <li><a href="#">Heating</a></li>
+          <li><a href="#">Woodwork</a></li>
+          <li><a href="#">Ironwork</a></li>
+          <li><a href="#">Ornaments</a></li>
+          <li><a href="#">Miscellaneous</a></li>
+        </ul>
+        <div class="icons">
+        <a href="#"><i class="fa fa-fw fa-search dropbtn" onclick="myFunction()"></i></a>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search..." id="myInput" onkeyup="filterFunction()"/>
+          </div>
+        <a href="#"><i class="fas fa-globe dropbtnlang" onclick="myFunctionlang()" ></i></a>
+          <div id="myDropdownlang" class="dropdownlang-content">
+            <a href="#about" style="font-size: 20px;">Nederlands</a>
+            <a href="#about" style="font-size: 20px;">Deutsch</a>
+            <a href="#about" style="font-size: 20px;">Français</a>
+            <a href="#about" style="font-size: 20px;">Italiano</a>
+            <a href="#about" style="font-size: 20px;">Русский</a>
+          </div>
+          <a href="cart.html"><i class="fas fa-shopping-cart dropbtnlang"></i></a>
+        </div>
+        <div class="dropdown">
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner">
+      <img src="images/Versailles-banner.jpg" width="100%" />
+    </div>
+
+    <div class="arrivals">
+        <h1 class="titletext">Shopping cart</h1>
+      </div>
+    <div class="CartItems">
+        <div class="CartProduct">
+            <div class="CartIMG">
+              <img src="images/stool.jpg">
+            </div>
+            <div class="CartProductName">
+                <p><a href="product.html" style="color: black; text-decoration: none; font-family: Lato;">Antique Chair</a></p>
+            </div>
+            <div class="CartPrice">
+                <p>30€</p>
+            </div>
+            <div class="CartQuantity">
+                <p>2</p>
+            </div>
+            <div class="CartTotal">
+                <p>30€</p>
+            </div>
+            <div class="CartCancel">
+                <a class="fas fa-times"></a>
+            </div>
+        </div>
+        <div class="CartProduct">
+          <div class="CartIMG">
+            <img src="images/Chenets.jpg">
+          </div>
+          <div class="CartProductName">
+              <p><a href="product.html" style="color: black; text-decoration: none; font-family: Lato;">Antique Chair</a></p>
+          </div>
+          <div class="CartPrice">
+              <p>60€</p>
+          </div>
+          <div class="CartQuantity">
+              <p>2</p>
+          </div>
+          <div class="CartTotal">
+              <p>60€</p>
+          </div>
+          <div class="CartCancel">
+              <a class="fas fa-times"></a>
+          </div>
+      </div>
+      <div class="Cart-collaterals">
+        <div class="Cart-totals">
+          <div class="Cart-Price">
+            <h2>Basket Price</h2>
+            <p>Total 90,00€</p>
+          </div>
+
+          <div class="Cart-Shipping-Method">
+            <ul class="Cart-Shipping-Methods">
+              <li><input type="radio" name="shipping_method[0]" data-index="0" class="Cart-Shipping" checked="checked"><label for="shipping_method_0_flat_rate6">Pickup at Villador</label>					</li>
+              <li><input type="radio" name="shipping_method[0]" data-index="0" class="Cart-Shipping"><label for="shipping_method_0_flat_rate2">Transport +50,00€</label>					</li>
+            </ul>
+          </div>
+
+          <div class="Cart-Total-Amount">
+            <th>Total</th>
+            <th >90,00€</th>
+          </div>
+
+            <div class="Cart-Checkout">
+              <a href="#" class="Cart-Checkout-Button Cart-Button btn-purchase">Go to checkout</a>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  <br><br><br><br><br><br><br><br>
+
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      };
+      cancelBtn.onclick = () => {
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      };
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+                <div class="footer-container">
+      <div class="footer">
+        <div class="footer-heading footer-1">
+          <h3>Styles</h3>
+          <a href="#">Art Nouveau</a>
+          <a href="#">Art Deco</a>
+          <a href="#">Vintage</a>
+          <a href="#">Directoire</a>
+          <a href="#">Industriel</a>
+          <a href="#">Empire</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h3>Periods</h3>
+          <a href="/">17th century</a>
+          <a href="/">18th century</a>
+          <a href="/">19th century</a>
+          <a href="/">1900-1930</a>
+          <a href="/">1930-1950</a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h3>Materials</h3>
+          <a href="/">Stone</a>
+          <a href="/">Terracotta</a>
+          <a href="/">Steel</a>
+          <a href="/">Wood</a>
+          <a href="/">Cement</a>
+                </div>
+        <div class="footer-email-form">
+          <h3>Newsletter</h3>
+          <input type="email" placeholder="Enter your email address" id="footer-email">
+          <input type="submit" value="Sign Up" id="footer-email-btn">
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© Villa d'Or | Since 1995 | All rights reserved | <a class="tac" href="/terms-and-conditons.html">Terms and conditions</a></p>
+      </div>
+    </div>
+  </body>
+</html>
