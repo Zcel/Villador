@@ -7,32 +7,13 @@
     <link rel="stylesheet" href="/css/index.css" />
     <link rel="stylesheet" href="/css/product.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
-    <link rel="stylesheet" href="/js/navbar.js" />
+    <script src="js/lang.js"></script>
+    <script src="js/searchbar.js"></script>
+    <script src="js/Share.js"></script>
+    <script src="js/cart.js"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <!--Navbar-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
-    <script>
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      function filterFunction() {
-        var input, filter, ul, li, a, i;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        div = document.getElementById("myDropdown");
-        a = div.getElementsByTagName("a");
-        for (i = 0; i < a.length; i++) {
-          txtValue = a[i].textContent || a[i].innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
-          } else {
-            a[i].style.display = "none";
-          }
-        }
-      }
-    </script>
   </head>
   <body>
     <nav class="navbar">
@@ -58,13 +39,13 @@
           </div>
         <a href="#"><i class="fas fa-globe dropbtnlang" onclick="myFunctionlang()" ></i></a>
           <div id="myDropdownlang" class="dropdownlang-content">
-            <a href="#about">Nederlands</a>
-            <a href="#about">Deutsh</a>
-            <a href="#about">Français</a>
-            <a href="#about">Italiano</a>
-            <a href="#about">Русский</a>
+            <a href="#about" style="font-size: 20px;">Nederlands</a>
+            <a href="#about" style="font-size: 20px;">Deutsch</a>
+            <a href="#about" style="font-size: 20px;">Français</a>
+            <a href="#about" style="font-size: 20px;">Italiano</a>
+            <a href="#about" style="font-size: 20px;">Русский</a>
           </div>
-          <a href="#"><i class="fas fa-shopping-cart dropbtnlang"></i></a>
+          <a href="cart.html"><i class="fas fa-shopping-cart dropbtnlang"></i></a>
         </div>
         <div class="dropdown">
         <div class="icon menu-btn">
@@ -77,48 +58,47 @@
     </div>
     <br>
     <div class = "card-wrapper">
-      <div class = "card">
+      <div class = "cards">
         <!-- card left -->
         <div class = "product-imgs">
-          <div class = "img-display">
-            <div class = "img-showcase">
-              <img src = "images/stool.jpg" alt = "">
-              <img src = "images/Pierre bleue.jpg" alt = "">
-              <img src = "images/Chenets.jpg" alt = "">
-              <img src = "images/bercea.jpg" alt = "">
+          <div class = "img-select" id="slider">
+            <div class = "img-item">
+              <a data-id = "1">
+                <img src = "images/stool.jpg" alt = "" id="img-scale-bottom" class="thumbnail">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a data-id = "2">
+                <img src = "images/Pierre bleue.jpg" alt = "" id="img-scale-bottom" class="thumbnail">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a data-id = "3">
+                <img src = "images/Chenets.jpg" alt = "" id="img-scale-bottom" class="thumbnail">
+              </a>
+            </div>
+            <div class = "img-item">
+              <a data-id = "4">
+                <img src = "images/bercea.jpg" alt = "" id="img-scale-bottom" class="thumbnail">
+              </a>
             </div>
           </div>
-          <div class = "img-select">
-            <div class = "img-item">
-              <a href = "#" data-id = "1">
-                <img src = "images/stool.jpg" alt = "" id="img-scale-bottom">
-              </a>
-            </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "2">
-                <img src = "images/Pierre bleue.jpg" alt = "" id="img-scale-bottom">
-              </a>
-            </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "3">
-                <img src = "images/Chenets.jpg" alt = "" id="img-scale-bottom">
-              </a>
-            </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "4">
-                <img src = "images/bercea.jpg" alt = "" id="img-scale-bottom">
-              </a>
+          <div class = "img-display">
+            <div class = "img-showcase">
+              <img src="images/stool.jpg" alt="" id=featured>
             </div>
           </div>
         </div>
         <!-- card right -->
         <div class = "product-content">
+          <p class="location"><a href="/" class="locationtext">Miscellaneous</a> > <a href="/" class="locationtext">19th Century</a> > <a href="/" class="locationtext">Antique Chair</a></p>
           <h2 class = "product-link">Antique Chairs</h2>
 
           <div class = "product-detail">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
             <ul>
+              <li>Price: <span class="shop-item-price">60$</span></li>
               <li>Item ID: <span>357GK</span></li>
               <li>Quantity: <span>2</span></li>
               <li>Origin: <span>Spain</span></li>
@@ -128,33 +108,75 @@
           </div>
 
           <div class = "purchase-info">
-            <input type = "number" min = "0" value = "1" max="2">
-            <button type = "button" class = "btn">
+            <input class="input-number" type = "number" min = "1" value = "1" max="2">
+            <a href="cart.html" style="text-decoration: none;"><button type = "button" class = "btn">
               Add to Cart <i class = "fas fa-shopping-cart"></i>
-            </button>
+            </button></a>
           </div>
 
           <div class = "social-links">
-            <p>Share At: </p>
-            <a href = "#">
-              <i class = "fab fa-facebook-f"></i>
+            <p>Share: </p>
+            <a href="whatsapp://send?text=http://www.villador.com">
+              <img class = "social-icons" src="images/whatsapp.png"></i>
             </a>
             <a href = "#">
-              <i class = "fab fa-twitter"></i>
+              <img class = "social-icons" src="images/Facebook.png"></i>
+            </a>
+            <a href="https://www.instagram.com/?url=https://www.villador.com/" target="_blank">
+              <img class = "social-icons" src="images/Instagram.png"></i>
+            </a>
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-show-count="false" target="_blank">
+              <img class = "social-icons" src="images/Twitter.png"></i>
             </a>
             <a href = "#">
-              <i class = "fab fa-instagram"></i>
-            </a>
-            <a href = "#">
-              <i class = "fab fa-whatsapp"></i>
-            </a>
-            <a href = "#">
-              <i class = "fab fa-pinterest"></i>
+              <img class = "social-icons" src="images/Pinterest.png"></i>
             </a>
           </div>
         </div>
       </div>
     </div>
+    <br><br><br>
+    <div class="arrivals">
+      <h1 class="titletext">Related products</h1>
+    </div>
+    <div class="products">
+      <div class="card1">
+        <div class="top-section1">
+        <a href="product.html"><img id="image-container" src="images/stool.jpg" alt=""></a>
+        </div>
+        <div class="product-info">
+          <div class="name">Antique Chair</div>
+        </div>
+      </div>
+  
+      <div class="card2">
+        <div class="top-section2">
+          <a href="product.html"><img id="image-container" src="images/Inrijpoort2.jpg" alt=""></a>
+        </div>
+        <div class="product-info">
+          <div class="name">Steel door</div>
+        </div>
+      </div>
+  
+      <div class="card3">
+        <div class="top-section3">
+          <a href="product.html"><img id="image-container" src="images/tn_DSCF2224_Fotor.jpg" alt=""></a>
+        </div>
+        <div class="product-info">
+          <div class="name">Copper Statue</div>
+        </div>
+      </div>
+  
+      <div class="card4">
+        <div class="top-section4">
+          <a href="product.html"><img id="image-container" src="images/90424370_1575273429286850_3038944097784756533_n (1).jpg" alt=""></a>
+        </div>
+        <div class="product-info">
+          <div class="name">Old lamp</div>
+        </div>
+      </div>
+    </div>
+  
     <br><br><br><br><br>
     <script>
       const body = document.querySelector("body");
@@ -177,55 +199,35 @@
           : navbar.classList.remove("sticky");
       };
     </script>
-    <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunctionlang() {
-        document.getElementById("myDropdownlang").classList.toggle("showlang");
-      }
-      
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtnlang')) {
-          var dropdowns = document.getElementsByClassName("dropdownlang-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('showlang')) {
-              openDropdown.classList.remove('showlang');
-            }
-          }
-        }
-      }
-      </script>
       <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
+        document.getElementsByClassName('input-number')[0].oninput = function () {
+        var max = parseInt(this.max);
+
+        if (parseInt(this.value) > max) {
+            this.value = max; 
         }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
+    }
+      </script>
+      <script type="text/javascript">
+        let thumbnails = document.getElementsByClassName('thumbnail')
+    
+        let activeImages = document.getElementsByClassName('active')
+    
+        for (var i=0; i < thumbnails.length; i++){
+    
+          thumbnails[i].addEventListener('mouseover', function(){
+            console.log(activeImages)
+            
+            if (activeImages.length > 0){
+              activeImages[0].classList.remove('active')
+            }
+            
+    
+            this.classList.add('active')
+            document.getElementById('featured').src = this.src
+          })
         }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
+      </script>
           
                 <div class="footer-container">
       <div class="footer">
@@ -261,7 +263,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© Villa d'Or B.V. | Since 1995 | All rights reserved | <a class="tac" href="/terms-and-conditons.html">Terms and conditions</a> |</p>
+        <p>© Villa d'Or | Since 1995 | All rights reserved | <a class="tac" href="/terms-and-conditons.html">Terms and conditions</a></p>
       </div>
     </div>
   </body>

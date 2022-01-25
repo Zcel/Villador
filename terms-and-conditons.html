@@ -5,32 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Villador | Home</title>
     <link rel="stylesheet" href="/css/index.css" />
-    <link rel="stylesheet" href="/js/navbar.js" />
+    <script src="js/lang.js"></script>
+    <script src="js/searchbar.js"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <!--Navbar-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-
-    <script>
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      function filterFunction() {
-        var input, filter, ul, li, a, i;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        div = document.getElementById("myDropdown");
-        a = div.getElementsByTagName("a");
-        for (i = 0; i < a.length; i++) {
-          txtValue = a[i].textContent || a[i].innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
-          } else {
-            a[i].style.display = "none";
-          }
-        }
-      }
-    </script>
+    
   </head>
   <body>
     <nav class="navbar">
@@ -56,11 +36,11 @@
           </div>
         <a href="#"><i class="fas fa-globe dropbtnlang" onclick="myFunctionlang()" ></i></a>
           <div id="myDropdownlang" class="dropdownlang-content">
-            <a href="#about">Nederlands</a>
-            <a href="#about">Deutsh</a>
-            <a href="#about">Français</a>
-            <a href="#about">Italiano</a>
-            <a href="#about">Русский</a>
+            <a href="#about" style="font-size: 20px;">Nederlands</a>
+            <a href="#about" style="font-size: 20px;">Deutsh</a>
+            <a href="#about" style="font-size: 20px;">Français</a>
+            <a href="#about" style="font-size: 20px;">Italiano</a>
+            <a href="#about" style="font-size: 20px;">Русский</a>
           </div>
           <a href="#"><i class="fas fa-shopping-cart dropbtnlang"></i></a>
         </div>
@@ -337,27 +317,6 @@
           : navbar.classList.remove("sticky");
       };
     </script>
-    <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunctionlang() {
-        document.getElementById("myDropdownlang").classList.toggle("showlang");
-      }
-      
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtnlang')) {
-          var dropdowns = document.getElementsByClassName("dropdownlang-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('showlang')) {
-              openDropdown.classList.remove('showlang');
-            }
-          }
-        }
-      }
-      </script>
                 <div class="footer-container">
       <div class="footer">
         <div class="footer-heading footer-1">

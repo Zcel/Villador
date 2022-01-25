@@ -5,32 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Villador | Home</title>
     <link rel="stylesheet" href="/css/index.css" />
-    <link rel="stylesheet" href="/js/navbar.js" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <script src="js/lang.js"></script>
+    <script src="js/searchbar.js"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <!--Navbar-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
-    <script>
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-      function filterFunction() {
-        var input, filter, ul, li, a, i;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        div = document.getElementById("myDropdown");
-        a = div.getElementsByTagName("a");
-        for (i = 0; i < a.length; i++) {
-          txtValue = a[i].textContent || a[i].innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            a[i].style.display = "";
-          } else {
-            a[i].style.display = "none";
-          }
-        }
-      }
-    </script>
   </head>
   <body>
     <nav class="navbar">
@@ -56,13 +37,13 @@
           </div>
         <a href="#"><i class="fas fa-globe dropbtnlang" onclick="myFunctionlang()" ></i></a>
           <div id="myDropdownlang" class="dropdownlang-content">
-            <a href="#about">Nederlands</a>
-            <a href="#about">Deutsh</a>
-            <a href="#about">Français</a>
-            <a href="#about">Italiano</a>
-            <a href="#about">Русский</a>
+            <a href="#about" style="font-size: 20px;">Nederlands</a>
+            <a href="#about" style="font-size: 20px;">Deutsch</a>
+            <a href="#about" style="font-size: 20px;">Français</a>
+            <a href="#about" style="font-size: 20px;">Italiano</a>
+            <a href="#about" style="font-size: 20px;">Русский</a>
           </div>
-          <a href="#"><i class="fas fa-shopping-cart dropbtnlang"></i></a>
+          <a href="cart.html"><i class="fas fa-shopping-cart dropbtnlang"></i></a>
         </div>
         <div class="dropdown">
         <div class="icon menu-btn">
@@ -76,155 +57,155 @@
     </div>
 
     <div class="arrivals">
-      <h1>Latest Arrivals</h1>
+      <h1 class="titletext">Latest Arrivals</h1>
     </div>
 
   <div class="products">
-    <div class="card">
+    <div class="card1">
       <div class="top-section">
-      <a href="#"><img id="image-container" src="images/stool.jpg" alt=""></a>
+      <a href="product.html"><img id="image-container" src="images/stool.jpg" alt=""></a>
       </div>
     
       <div class="product-info">
         <div class="name">Antique Chairs</div>
         <div class="dis">One of our unique pieces of chairs perfect for outside</div>
-        <a class="btn" href="#">View item</a>
+        <a class="btn" href="product.html">View item</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card2">
       <div class="top-section">
-        <a href="#"><img id="image-container" src="images/Inrijpoort2.jpg" alt=""></a>
+        <a href="product.html"><img id="image-container" src="images/Inrijpoort2.jpg" alt=""></a>
       </div>
     
       <div class="product-info">
         <div class="name">Entryway</div>
         <div class="dis">One of our unique pieces of chairs perfect for outside</div>
-        <a class="btn" href="#">View item</a>
+        <a class="btn" href="product.html">View item</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card3">
       <div class="top-section">
-        <a href="#"><img id="image-container" src="images/tn_DSCF2224_Fotor.jpg" alt=""></a>
+        <a href="product.html"><img id="image-container" src="images/tn_DSCF2224_Fotor.jpg" alt=""></a>
       </div>
     
       <div class="product-info">
         <div class="name">Copper Statue</div>
         <div class="dis">One of our unique pieces of chairs perfect for outside</div>
-        <a class="btn" href="#">View item</a>
+        <a class="btn" href="product.html">View item</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card4">
       <div class="top-section">
-        <a href="#"><img id="image-container" src="images/90424370_1575273429286850_3038944097784756533_n (1).jpg" alt=""></a>
+        <a href="product.html"><img id="image-container" src="images/90424370_1575273429286850_3038944097784756533_n (1).jpg" alt=""></a>
       </div>
     
       <div class="product-info">
         <div class="name">Antique Lighting</div>
         <div class="dis">One of our unique pieces of chairs perfect for outside</div>
-        <a class="btn" href="#">View item</a>
+        <a class="btn" href="product.html">View item</a>
       </div>
     </div>
   </div>
 
   <div class="products">
-    <div class="card">
+    <div class="card1">
       <div class="top-section">
-      <a href="#"><img id="image-container" src="images/Chenets.jpg" alt=""></a>
+      <a href="product.html"><img id="image-container" src="images/Chenets.jpg" alt=""></a>
       </div>
     
       <div class="product-info">
         <div class="name">Fireplace Chenets</div>
         <div class="dis">One of our unique pieces of chairs perfect for outside</div>
-        <a class="btn" href="#">View item</a>
+        <a class="btn" href="product.html">View item</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card2">
       <div class="top-section">
-        <a href="#"><img id="image-container" src="images/Pierre bleue.jpg" alt=""></a>
+        <a href="product.html"><img id="image-container" src="images/Pierre bleue.jpg" alt=""></a>
       </div>
     
       <div class="product-info">
         <div class="name">Flooring</div>
         <div class="dis">One of our unique pieces of chairs perfect for outside</div>
-        <a class="btn" href="#">View item</a>
+        <a class="btn" href="product.html">View item</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card3">
       <div class="top-section">
-        <a href="#"><img id="image-container" src="images/Support equerre.jpeg" alt=""></a>
+        <a href="product.html"><img id="image-container" src="images/Support equerre.jpeg" alt=""></a>
       </div>
     
       <div class="product-info">
         <div class="name">Cast Iron Square</div>
         <div class="dis">One of our unique pieces of chairs perfect for outside</div>
-        <a class="btn" href="#">View item</a>
+        <a class="btn" href="product.html">View item</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card4">
       <div class="top-section">
-        <a href="#"><img id="image-container" src="images/bercea.jpg" alt=""></a>
+        <a href="product.html"><img id="image-container" src="images/bercea.jpg" alt=""></a>
       </div>
     
       <div class="product-info">
         <div class="name">Entryway</div>
         <div class="dis">One of our unique pieces of chairs perfect for outside</div>
-        <a class="btn" href="#">View item</a>
+        <a class="btn" href="product.html">View item</a>
       </div>
     </div>
   </div>
 
   <div class="products">
-    <div class="card">
+    <div class="card1">
       <div class="top-section">
-      <a href="#"><img id="image-container" src="images/stool.jpg" alt=""></a>
+      <a href="product.html"><img id="image-container" src="images/stool.jpg" alt=""></a>
       </div>
     
       <div class="product-info">
         <div class="name">Antique Chairs</div>
         <div class="dis">One of our unique pieces of chairs perfect for outside</div>
-        <a class="btn" href="#">View item</a>
+        <a class="btn" href="product.html">View item</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card2">
       <div class="top-section">
-        <a href="#"><img id="image-container" src="images/90424370_1575273429286850_3038944097784756533_n (1).jpg" alt=""></a>
+        <a href="product.html"><img id="image-container" src="images/90424370_1575273429286850_3038944097784756533_n (1).jpg" alt=""></a>
       </div>
     
       <div class="product-info">
         <div class="name">Antique Lamps</div>
         <div class="dis">One of our unique pieces of chairs perfect for outside</div>
-        <a class="btn" href="#">View item</a>
+        <a class="btn" href="product.html">View item</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card3">
       <div class="top-section">
-        <a href="#"><img id="image-container" src="images/Inrijpoort2.jpg" alt=""></a>
+        <a href="product.html"><img id="image-container" src="images/Inrijpoort2.jpg" alt=""></a>
       </div>
     
       <div class="product-info">
         <div class="name">Entryway</div>
         <div class="dis">One of our unique pieces of chairs perfect for outside</div>
-        <a class="btn" href="#">View item</a>
+        <a class="btn" href="product.html">View item</a>
       </div>
     </div>
 
-    <div class="card">
+    <div class="card4">
       <div class="top-section">
-        <a href="#"><img id="image-container" src="images/Chenets.jpg" alt=""></a>
+        <a href="product.html"><img id="image-container" src="images/Chenets.jpg" alt=""></a>
       </div>
     
       <div class="product-info">
         <div class="name">Fireplace Chenets</div>
         <div class="dis">One of our unique pieces of chairs perfect for outside</div>
-        <a class="btn" href="#">View item</a>
+        <a class="btn" href="product.html">View item</a>
       </div>
     </div>
   </div>
@@ -252,27 +233,6 @@
           : navbar.classList.remove("sticky");
       };
     </script>
-    <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function myFunctionlang() {
-        document.getElementById("myDropdownlang").classList.toggle("showlang");
-      }
-      
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtnlang')) {
-          var dropdowns = document.getElementsByClassName("dropdownlang-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('showlang')) {
-              openDropdown.classList.remove('showlang');
-            }
-          }
-        }
-      }
-      </script>
                 <div class="footer-container">
       <div class="footer">
         <div class="footer-heading footer-1">
@@ -307,7 +267,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© Villa d'Or B.V. | Since 1995 | All rights reserved | <a class="tac" href="/terms-and-conditons.html">Terms and conditions</a> |</p>
+        <p>© Villa d'Or | Since 1995 | All rights reserved | <a class="tac" href="/terms-and-conditons.html">Terms and conditions</a></p>
       </div>
     </div>
   </body>
