@@ -217,16 +217,30 @@
   display: none;
   position: absolute;
   background-color: #f6f6f6;
-  min-width: 230px;
+  width: 300px;
   overflow: auto;
   border: 3px solid black;
   z-index: 1;
   top: 11vh;
+  left: 69%;
+}
+
+.dropdown-content button{
+  float: right;
+  width: 20%;
+  height: 47px;
+  padding: 10px;
+  background: #b9ab93;
+  color: white;
+  font-size: 17px;
+  border: none;
+  border-left: none;
+  cursor: pointer;
+  right: 0;
 }
 
 .dropdown-content a {
   color: white;
-  padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
@@ -557,22 +571,7 @@
   height: auto;
   flex-wrap: wrap;
 }
-.card1{
-  position: relative;
-  margin-top: 10px;
-  display: inline-block;
-}
-.card2{
-  position: relative;
-  margin-top: 10px;
-  display: inline-block;
-}
-.card3{
-  position: relative;
-  margin-top: 10px;
-  display: inline-block;
-}
-.card4{
+.card{
   position: relative;
   margin-top: 10px;
   display: inline-block;
@@ -586,12 +585,12 @@
   text-align: center;
 }
 #image-container{
-  width: 270px;
-  height: 270px;
+  width: 300px;
+  height: 300px;
 }
 #image-container:hover{
   transform: scale(1.1);
-  transition: .2s ease-in;
+  transition: all 0.2s ease;
 }
 .product-info{
   color: black;
@@ -602,9 +601,10 @@
 .name{
   font-size: 23px;
   color: black;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Merriweather', serif;
   padding-bottom: 10px;
   text-align: center;
+  font-weight: 600;
 }
 .dis{
   font-size: 16px;
