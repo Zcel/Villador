@@ -554,6 +554,8 @@
   margin-bottom: 3vh;
   margin-top: 1vh;
   flex-direction: row;
+  height: auto;
+  flex-wrap: wrap;
 }
 .card1{
   position: relative;
